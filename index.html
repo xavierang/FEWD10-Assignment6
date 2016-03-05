@@ -4,9 +4,11 @@
         <meta charset="utf-8">
         <title>Fireside freelancing</title>
         <link type="text/css" rel="stylesheet" href="normalize.css">
-        <link type="text/css" rel="stylesheet" href="fireside.css">
+        <link type="text/css" rel="stylesheet" href="css/main.css">
     </head>
     <body>
+        <h1>Send us a message</h1>
+        <p>We usually respond within 1 business day</p>
         <form action="" method="post">
             <fieldset>
                 <legend>General Info</legend>
@@ -21,10 +23,86 @@
 
                 <label for="how">How did you hear about us?</label>
                 <select id="how">
-                    <option name="how" value="xavier1">Xavier</option>
-                    <option name="how" value="xavier2">Xavier2</option>
-                    <option name="how" value="xavier3">Xavier3</option>
+                    <option name="how" value="event">Event</option>
+                    <option name="how" value="friends">Friends</option>
+                    <option name="how" value="internet">Internet</option>
+                </select>
+
+                <label for="what">What would you like to discuss?</label>
+                <div id="what">
+                    <div>
+                        <input type="radio" name="what" value="hiring" checked>
+                        <label>Hiring Philosophie</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="what" value="joining"> 
+                        <label>Joining the Philosophie team</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="what" value="other">
+                        <label>Other</label>
+                    </div>
+                </div>
             </fieldset>
+
+            <fieldset>
+                <legend>Project Info</legend>
+                <label for="which">Which of our offerings interest you?</label>
+                <div id="which">
+                    <div>
+                        <input type="checkbox" name="which" value="branding">
+                        <label>Learn Branding</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="which" value="mvp">
+                        <label>4 Week MVP</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="which" value="product">
+                        <label>Product Team</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Which" value="design">
+                        <label>Design Sprint</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="which" value="other">
+                        <label>Other</label>
+                    </div>
+                </div>
+
+                <label for="problem">What is the problem you are trying to solve?</label>
+                <textarea id="problem" name="problem"></textarea>
+
+                <label for="hope">What do you hope our engagement will accomplish?</label>
+                <textarea id="hope" name="hope"></textarea>
+
+                <label for="budget">What is your budget range?</label>
+                <div id="budget">
+                    <div>
+                        <input type="radio" name="budget" value="<40k" checked>
+                        <label>less than $40k </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="budget" value="40k-100k">
+                        <label>$40k - $100k</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="budget" value="100k-250k">
+                        <label>$100k - $250k</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="budget" value="250k-500k">
+                        <label>$250k - $500k</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="budget" value=">500k">
+                        <label>$500k +</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Submit">
         </form>
     </body>
 </html>
